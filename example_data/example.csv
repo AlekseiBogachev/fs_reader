@@ -1,4 +1,4 @@
-time,frequency_hz,dlts_v,temperature_k,dlts_pf,bs,ls,f_pulse,u1,ur,time_between_meas,integral_time,sample_name
+time,frequency_hz,dlts_v,temperature_k,dlts_pf,bs,ls,f_pulse,u1,ur,time_between_meas,integral_time,specimen_name
 2021-12-01 15:06:10,2500.0,-2.182,293.206,-0.002182,1,100,20,-1.0,-12.0,3.5,3.0,КТ117№3_п1(база 2)
 2021-12-01 15:06:14,1985.8207,-2.296,293.204,-0.002296,1,100,20,-1.0,-12.0,3.5,3.0,КТ117№3_п1(база 2)
 2021-12-01 15:06:18,1577.3937,-2.635,293.207,-0.0026349999999999998,1,100,20,-1.0,-12.0,3.5,3.0,КТ117№3_п1(база 2)
