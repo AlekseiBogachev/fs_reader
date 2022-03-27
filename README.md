@@ -28,7 +28,7 @@ A part of this DataFrame is shown below:
 | 2021-12-01 15:06:10 |     2500.0000 |  -2.182 |        293.206 | -0.002182 |   1 | 100 |      20 | -1.0 | -12.0 |               3.5 |           3.0 | КТ117№3_п1(база 2) |
 
 
-##Methods
+## Methods
 **read_from_d_t(d_file_name, t_file_name, encoding='cp1251')** reads data from text files with experimental data.  
 **read_from_csv(fname, encoding=None)** reads data from csv-file created by an instance of the ExperimentalDataReader class.  
 **read_from_hdf(fname, key=None)** reads data from a binary file in the HDF5 format.  
