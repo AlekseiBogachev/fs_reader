@@ -5,9 +5,13 @@ import re
 
 class DataReader():
     """
-    Reader of old experimental data split into two files. 
-    One of which contains the results of DLTS measurements, the other contains 
-    the results of temperature measurements.
+    Reader for experimental data obtained on the measuring complex for DLTS. 
+    It can read csv-files and experimental data split into two files (it's
+    the obsolete and akward format). One of which contains the results of DLTS 
+    measurements, the other contains the results of temperature measurements. 
+    It puts the data to pandas.DataFrame, later it can write it to csv or hdf5 
+    files. It's also posible to show a plot of the data and write this image 
+    to .svg or .jpg.
     
     Attributes
     ----------
@@ -61,7 +65,7 @@ class DataReader():
     set_integral_time(time=np.nan)
         Write the value of the time constant of the integrating circuit to 
         the specimen_name column of the self.data attribute.
-    compute_dlts_pf():
+    compute_dlts_pf()
         Convert values of DLTS-signal in volts to values in picofarads and 
         write them to the dlts_pf column of the self.data attribute.
     to_csv(fname)
