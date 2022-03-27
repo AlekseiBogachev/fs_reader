@@ -1,5 +1,5 @@
 # fs_reader
-There is the reader for experimental data obtained using the measuring complex for DLTS. It can read csv-files and experimental data split into two files (the latter is the obsolete and awkward format), one of which contains the results of DLTS measurements, the other contains the results of temperature measurements. It puts the data to pandas.DataFrame, later it can write it to csv or hdf5 files. It's also posible to show a plot of the data and write this image to .svg or .jpg. The example of plot is shown below.
+There is the reader for experimental data obtained using the measuring complex for DLTS. It can read csv-files and experimental data split into two files (the latter is the obsolete and awkward format), one of which contains the results of DLTS measurements, the other contains the results of temperature measurements. It puts the data to pandas.DataFrame, later it can write it to .csv or hdf5 files. It's also posible to show a plot of the data and write this image to .svg or .jpg. The example of plot is shown below.
 ![plot example](example_data/example.svg)
 
 There is one **DataReader** class in this repository. It has one attribute and implements several methods.
@@ -44,3 +44,15 @@ A part of this DataFrame is shown below:
 - **to_csv(fname)** writes the self.data DataFrame to the csv-file.
 - **to_hdf(fname, key='data')** writes the self.data DataFrame to the binary file in the HDF5 format.
 - **get_plot()** makes a plot of the experimental data.
+
+## Folders and files
+
+- **ExperimentalDataReader.py** -  the file containig *DataReader* class and all necessary docstrings.
+- **DataReader_test.ipynb** - the Jupyter Notebook to run *DataReader* class and make examples of plots and files.
+- **example_data** - the folder containing examples of plots and files.
+  - **example.d** - an example of file containing the results of DLTS measurements in obsolete format.
+  - **example.t** - an example of file containing the results of temperature measurements in obsolete format.
+  - **example.csv** - an example of the csv-file with experimental data obtained by the *DataReader.to_csv()* method.
+  - **example.h5** - an example of the hdf5 file with experimental data obtained by the *DataReader.to_hdf()* method.
+  - **example.svg** - an example of the the plot obtained by the *DataReader.get_plot()* method and saved in the .svg format.
+  - **example.jpg** - the same image as **example.svg** but in the .jpg format.
