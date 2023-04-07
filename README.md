@@ -1,4 +1,7 @@
 # fs_reader
+
+**Project status:** completed
+
 There is the reader for experimental data obtained using the measuring complex for DLTS. It can read csv-files and experimental data split into two files (the latter is the obsolete and awkward format), one of which contains the results of DLTS measurements, the other contains the results of temperature measurements. It puts the data to pandas.DataFrame, later it can write it to .csv or hdf5 files. It's also posible to show a plot of the data and write this image to .svg or .jpg. The example of plot is shown below.
 ![plot example](example_data/example.svg)
 
